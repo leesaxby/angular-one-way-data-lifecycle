@@ -1,7 +1,9 @@
 import angular from 'angular';
-import mainComp from './components/main/main.js';
+import organisation from './components/organisation/organisation.js';
+import member from './components/member/member.js';
 
-angular.module('main', [])
-       .component('mainComponent', mainComp);
+angular.module('app', [])
+       .component('organisation', organisation)
+       .component('member', member);
 
-angular.bootstrap(document, ['main']);
+angular.bootstrap(document, ['app']);
